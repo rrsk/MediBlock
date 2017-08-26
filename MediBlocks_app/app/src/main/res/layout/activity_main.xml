@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="app.mediblocks.com.mediblocks.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_main" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/RRR"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textSize="27dp"
+            android:layout_marginTop="200dp"
+            android:textAlignment="center"
+            android:text="     You have No medication added Currently"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="wrap_content"
+            android:id="@+id/float_button"
+            android:onClick="toggleOptionVisibility"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.FloatingActionButton
+                android:layout_width="60dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:id="@+id/floating_button"
+                android:layout_height="60dp" />
+            <ImageView
+                android:layout_width="60dp"
+                android:id="@+id/floating_image"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="60dp" />
+
+        </android.support.design.widget.CoordinatorLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="40dp"
+            android:padding="10dp"
+            android:onClick="addMedicine"
+            android:id="@+id/addMedicine"
+            android:textSize="20dp"
+            android:visibility="gone"
+            android:background="#424242"
+            android:textColor="#ffffff"
+            android:text="add medicine"
+            android:layout_above="@+id/float_button"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="40dp"
+            android:visibility="gone"
+            android:padding="10dp"
+            android:onClick="editDosage"
+            android:id="@+id/editDosage"
+            android:background="#424242"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:text="edit Dosage"
+            android:layout_above="@+id/addMedicine"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="40dp"
+            android:visibility="gone"
+            android:padding="10dp"
+            android:onClick="addMedicine"
+            android:textSize="20dp"
+            android:text="add medicine"
+            android:layout_above="@+id/editDosage"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+
+
+</android.support.design.widget.CoordinatorLayout>
