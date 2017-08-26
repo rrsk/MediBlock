@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<h1> PILLS </h1>
+
+	{% for temp in pill %}
+		<pre> id = {{ temp.id }} name = {{ temp.name }}  partition_number = {{ temp.partition_number }}  user_id = {{ temp.user_id }}  count = {{ temp.count }}  </pre>
+		
+	{% endfor %}
+
+</body>
+</html>

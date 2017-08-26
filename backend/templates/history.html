@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<h1> HISTORY </h1>
+
+	{% for temp in history %}
+		<pre> user_id = {{ temp.user_id }} pillname = {{ temp.pillname }}  created_on = {{ temp.created_on }} pill_id = {{ temp.pill_id }}  </pre>
+		
+	{% endfor %}
+
+</body>
+</html>

@@ -1,0 +1,5 @@
+---
+applications:
+ - name: MediBlock
+   random-route: true
+   memory: 128M
