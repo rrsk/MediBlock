@@ -39,7 +39,7 @@ upper_pointer_color = np.array([40,180,150])
 
 lastIndexStored = np.array([0,0])
 centerOfFrame = np.array([0,0])
-
+# capture_continuous
 currentTime = None
 medicinTakenForPeriod = []
 
